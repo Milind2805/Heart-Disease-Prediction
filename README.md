@@ -1,12 +1,12 @@
 # Heart-Disease-Prediction
 Heart disease prediction using Logistic Regression, SVM, KNN, Decision Tree and Random Forest. Best accuracy: 90.74% with Logistic Regression.
-# Heart Disease Prediction 🫀
+# Heart Disease Prediction 
 
 A machine learning project that predicts whether a patient has heart disease
 based on clinical parameters like age, blood pressure, cholesterol, and more.
 
-## 📌 About
-This is my third machine learning project, built while learning ML during
+##  About
+This is my second machine learning project, built while learning ML during
 my first year of B.Tech Civil Engineering at MANIT Bhopal.
 Unlike my previous Iris project which had a perfect dataset, this project
 involved real medical data and comparing multiple algorithms to find the
