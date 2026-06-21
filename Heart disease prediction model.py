@@ -62,6 +62,31 @@ plt.ylabel("Actual")
 plt.title("Confusion Matrix - Logistic Regression")
 plt.show()
 
+model_names = ["Logistic Regression", "Decision Tree", "SVM", "KNN", "Random Forest"]
+test_scores = [90.74, 75.92, 88.88, 81.48, 85.18]
+
+sns.barplot(x=test_scores, y=model_names, palette="coolwarm")
+plt.xlabel("Test Accuracy (%)")
+plt.title("Model Accuracy Comparison")
+plt.xlim(60, 100)
+plt.show()
+
+sns.countplot(x="Heart Disease", data=dataset, palette="Set2")
+plt.title("Heart Disease Distribution")
+plt.xticks([0, 1], ["No Disease", "Disease"])
+plt.show()
+
+sns.scatterplot(x="Age", y="Max HR", hue="Heart Disease", data=dataset, palette="coolwarm")
+plt.title("Age vs Max Heart Rate")
+plt.show()
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(dataset.corr(), annot=True, fmt=".2f", cmap="coolwarm")
+plt.title("Feature Correlation Heatmap")
+plt.xticks(fontsize=6, rotation=45)
+plt.show()
+
+
 
 
 
